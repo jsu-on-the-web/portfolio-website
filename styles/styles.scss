@@ -35,3 +35,25 @@
 =============================================*/
 
 /*=====  End of About  ======*/
+
+/*=============================================
+=            Projects            			  =
+=============================================*/
+
+.projects {
+	&__project-list {
+		display: grid;
+		justify-content: space-around;
+		grid-gap: 1vw;
+		padding: 1vwh;
+		grid-template-columns: repeat(3, auto);
+	}
+	&__project-item {
+		display: flex;
+		flex-direction: column;
+		width: 15vw;
+		text-align: center;
+	}
+}
+
+/*=====  End of Projects  ======*/
