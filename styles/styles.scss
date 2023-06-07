@@ -41,11 +41,22 @@
 =============================================*/
 
 .projects {
+	background-color: colours.$dark-grey;
+	color: colours.$light-grey;
+
+	i {
+		color: colours.$light-grey;
+		transition: 0.5s ease-in-out;
+	}
+	i:hover {
+		color: colours.$violet;
+	}
+
 	&__project-list {
 		display: grid;
 		justify-content: space-around;
 		grid-gap: 1vw;
-		padding: 1vwh;
+
 		grid-template-columns: repeat(3, auto);
 	}
 	&__project-item {

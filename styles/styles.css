@@ -30,11 +30,21 @@
 /*=============================================
 =            Projects            			  =
 =============================================*/
+.projects {
+  background-color: hsl(291.4, 11.7%, 23.5%);
+  color: hsl(92.7, 6.8%, 68.4%);
+}
+.projects i {
+  color: hsl(92.7, 6.8%, 68.4%);
+  transition: 0.5s ease-in-out;
+}
+.projects i:hover {
+  color: hsl(266.7, 83.4%, 59.8%);
+}
 .projects__project-list {
   display: grid;
   justify-content: space-around;
   grid-gap: 1vw;
-  padding: 1vwh;
   grid-template-columns: repeat(3, auto);
 }
 .projects__project-item {
