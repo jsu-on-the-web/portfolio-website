@@ -33,6 +33,7 @@
 .projects {
   background-color: hsl(291.4, 11.7%, 23.5%);
   color: hsl(92.7, 6.8%, 68.4%);
+  pointer-events: none;
 }
 .projects i {
   color: hsl(92.7, 6.8%, 68.4%);
@@ -52,6 +53,23 @@
   flex-direction: column;
   width: 15vw;
   text-align: center;
+  opacity: 75%;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: auto;
+}
+.projects__:hover > * {
+  opacity: 0.4;
+}
+.projects__:hover > *:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.projects__project-item:hover {
+  opacity: 100%;
+}
+.projects__project-item--not-hovered {
+  /* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+  opacity: 50%;
 }
 
 /*=====  End of Projects  ======*/

@@ -11,6 +11,11 @@
 =            Main Selectors                   =
 =============================================*/
 
+// * {
+// 	padding: 0;
+// 	margin: 0;
+// }
+
 /*=====  End of Main Selectors  ======*/
 
 /*=============================================
@@ -43,6 +48,7 @@
 .projects {
 	background-color: colours.$dark-grey;
 	color: colours.$light-grey;
+	pointer-events: none;
 
 	i {
 		color: colours.$light-grey;
@@ -64,6 +70,27 @@
 		flex-direction: column;
 		width: 15vw;
 		text-align: center;
+		opacity: 75%;
+		transition: opacity 0.5s ease-in-out;
+		pointer-events: auto;
+	}
+
+	&__:hover > * {
+		opacity: 0.4;
+	}
+
+	&__:hover > *:hover {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+
+	&__project-item:hover {
+		opacity: 100%;
+	}
+
+	&__project-item--not-hovered {
+		/* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+		opacity: 50%;
 	}
 }
 
