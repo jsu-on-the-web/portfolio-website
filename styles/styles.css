@@ -9,6 +9,10 @@
 /*=============================================
 =            Main Selectors                   =
 =============================================*/
+body {
+  margin: 0;
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -45,6 +49,7 @@ section {
   background-color: hsl(291.4, 11.7%, 23.5%);
   color: hsl(92.7, 6.8%, 68.4%);
   pointer-events: none;
+  height: fit-content;
 }
 .projects i {
   color: hsl(92.7, 6.8%, 68.4%);
@@ -54,15 +59,12 @@ section {
   color: hsl(266.7, 83.4%, 59.8%);
 }
 .projects__project-list {
-  display: grid;
-  justify-content: space-around;
-  grid-gap: 1vw;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
 }
 .projects__project-item {
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 40vw;
   text-align: center;
   opacity: 75%;
   transition: opacity 0.5s ease-in-out;
@@ -81,6 +83,11 @@ section {
 .projects__project-item--not-hovered {
   /* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
   opacity: 50%;
+}
+.projects__page-link {
+  display: flex;
+  justify-content: right;
+  margin-right: 5vw;
 }
 
 /*=====  End of Projects  ======*/
