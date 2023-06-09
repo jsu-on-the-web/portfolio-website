@@ -25,24 +25,71 @@ section {
 	height: 100vh;
 }
 
-@media screen and (min-width: 1024px) {
-	section {
-		width: 100vw;
-		height: 100vh;
-	}
-	.projects__project-list {
-		flex-direction: row;
-	}
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	section {
 		width: 100vw;
 		height: 100vh;
 	}
-	.projects__project-list {
-		flex-direction: column;
-		align-items: center;
+
+	.projects {
+		background-color: colours.$dark-grey;
+		color: colours.$light-grey;
+		pointer-events: none;
+		height: fit-content;
+		padding: 10px;
+
+		i {
+			color: colours.$light-grey;
+			transition: 0.5s ease-in-out;
+		}
+		i:hover {
+			color: colours.$violet;
+		}
+
+		&__project-list {
+			// display: grid;
+			// justify-content: space-around;
+			// grid-gap: 1vw;
+
+			// grid-template-columns: repeat(3, auto);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		&__project-item {
+			display: flex;
+			flex-direction: column;
+			width: 40vw;
+			text-align: center;
+			opacity: 75%;
+			transition: opacity 0.5s ease-in-out;
+			pointer-events: auto;
+		}
+
+		&__:hover > * {
+			opacity: 0.4;
+		}
+
+		&__:hover > *:hover {
+			transform: scale(1.1);
+			opacity: 1;
+		}
+
+		&__project-item:hover {
+			opacity: 100%;
+		}
+
+		&__project-item--not-hovered {
+			/* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+			opacity: 50%;
+		}
+
+		&__page-link {
+			display: flex;
+			justify-content: right;
+			margin-right: 5vw;
+		}
 	}
 }
 
@@ -51,9 +98,66 @@ section {
 		width: 100vw;
 		height: 100vh;
 	}
-	.projects__project-list {
-		flex-direction: column;
-		align-items: center;
+
+	.projects {
+		background-color: colours.$dark-grey;
+		color: colours.$light-grey;
+		pointer-events: none;
+		height: fit-content;
+		padding: 10px;
+
+		i {
+			color: colours.$light-grey;
+			transition: 0.5s ease-in-out;
+		}
+		i:hover {
+			color: colours.$violet;
+		}
+
+		&__project-list {
+			// display: grid;
+			// justify-content: space-around;
+			// grid-gap: 1vw;
+
+			// grid-template-columns: repeat(3, auto);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		&__project-item {
+			display: flex;
+			flex-direction: column;
+			width: 50vw;
+			text-align: center;
+			opacity: 75%;
+			transition: opacity 0.5s ease-in-out;
+			pointer-events: auto;
+		}
+
+		&__:hover > * {
+			opacity: 0.4;
+		}
+
+		&__:hover > *:hover {
+			transform: scale(1.1);
+			opacity: 1;
+		}
+
+		&__project-item:hover {
+			opacity: 100%;
+		}
+
+		&__project-item--not-hovered {
+			/* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+			opacity: 50%;
+		}
+
+		&__page-link {
+			display: flex;
+			justify-content: right;
+			margin-right: 5vw;
+		}
 	}
 }
 
@@ -86,61 +190,71 @@ section {
 =            Projects            			  =
 =============================================*/
 
-.projects {
-	background-color: colours.$dark-grey;
-	color: colours.$light-grey;
-	pointer-events: none;
-	height: fit-content;
+@media screen and (min-width: 1024px) {
+	section {
+		width: 100vw;
+		height: 100vh;
+	}
 
-	i {
+	.projects {
+		background-color: colours.$dark-grey;
 		color: colours.$light-grey;
-		transition: 0.5s ease-in-out;
-	}
-	i:hover {
-		color: colours.$violet;
-	}
+		pointer-events: none;
+		height: fit-content;
+		padding: 10px;
 
-	&__project-list {
-		// display: grid;
-		// justify-content: space-around;
-		// grid-gap: 1vw;
+		i {
+			color: colours.$light-grey;
+			transition: 0.5s ease-in-out;
+		}
+		i:hover {
+			color: colours.$violet;
+		}
 
-		// grid-template-columns: repeat(3, auto);
+		&__project-list {
+			// display: grid;
+			// justify-content: space-around;
+			// grid-gap: 1vw;
 
-		display: flex;
-	}
-	&__project-item {
-		display: flex;
-		flex-direction: column;
-		width: 40vw;
-		text-align: center;
-		opacity: 75%;
-		transition: opacity 0.5s ease-in-out;
-		pointer-events: auto;
-	}
+			// grid-template-columns: repeat(3, auto);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		&__project-item {
+			display: flex;
+			flex-direction: column;
+			width: 20vw;
+			text-align: center;
+			opacity: 75%;
+			transition: opacity 0.5s ease-in-out;
+			pointer-events: auto;
+		}
 
-	&__:hover > * {
-		opacity: 0.4;
-	}
+		&__:hover > * {
+			opacity: 0.4;
+		}
 
-	&__:hover > *:hover {
-		transform: scale(1.1);
-		opacity: 1;
-	}
+		&__:hover > *:hover {
+			transform: scale(1.1);
+			opacity: 1;
+		}
 
-	&__project-item:hover {
-		opacity: 100%;
-	}
+		&__project-item:hover {
+			opacity: 100%;
+		}
 
-	&__project-item--not-hovered {
-		/* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
-		opacity: 50%;
-	}
+		&__project-item--not-hovered {
+			/* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+			opacity: 50%;
+		}
 
-	&__page-link {
-		display: flex;
-		justify-content: right;
-		margin-right: 5vw;
+		&__page-link {
+			display: flex;
+			justify-content: right;
+			margin-right: 5vw;
+		}
 	}
 }
 
