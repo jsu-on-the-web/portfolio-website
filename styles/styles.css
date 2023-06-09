@@ -18,7 +18,26 @@ section {
   height: 100vh;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects__project-list {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects__project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
   section {
     width: 100vw;
     height: 100vh;
@@ -53,6 +72,7 @@ section {
   background-color: hsl(291.4, 11.7%, 23.5%);
   color: hsl(92.7, 6.8%, 68.4%);
   pointer-events: none;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .projects i {
@@ -94,6 +114,4 @@ section {
   margin-right: 5vw;
 }
 
-/*=====  End of Projects  ======*/
-
-/*# sourceMappingURL=styles.css.map */
+/*=====  End of Projects  ======*//*# sourceMappingURL=styles.css.map */
