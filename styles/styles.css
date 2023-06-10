@@ -9,6 +9,125 @@
 /*=============================================
 =            Main Selectors                   =
 =============================================*/
+body {
+  margin: 0;
+}
+
+section {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects {
+    background-color: hsl(291.4, 11.7%, 23.5%);
+    color: hsl(92.7, 6.8%, 68.4%);
+    pointer-events: none;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  .projects i {
+    color: hsl(92.7, 6.8%, 68.4%);
+    transition: 0.5s ease-in-out;
+  }
+  .projects i:hover {
+    color: hsl(266.7, 83.4%, 59.8%);
+  }
+  .projects__project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .projects__project-item {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    text-align: center;
+    opacity: 75%;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: auto;
+  }
+  .projects__:hover > * {
+    opacity: 0.4;
+  }
+  .projects__:hover > *:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .projects__project-item:hover {
+    opacity: 100%;
+  }
+  .projects__project-item--not-hovered {
+    /* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+    opacity: 50%;
+  }
+  .projects__page-link {
+    display: flex;
+    justify-content: right;
+    margin-right: 5vw;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects {
+    background-color: hsl(291.4, 11.7%, 23.5%);
+    color: hsl(92.7, 6.8%, 68.4%);
+    pointer-events: none;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  .projects i {
+    color: hsl(92.7, 6.8%, 68.4%);
+    transition: 0.5s ease-in-out;
+  }
+  .projects i:hover {
+    color: hsl(266.7, 83.4%, 59.8%);
+  }
+  .projects__project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .projects__project-item {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+    opacity: 75%;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: auto;
+  }
+  .projects__:hover > * {
+    opacity: 0.4;
+  }
+  .projects__:hover > *:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .projects__project-item:hover {
+    opacity: 100%;
+  }
+  .projects__project-item--not-hovered {
+    /* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+    opacity: 50%;
+  }
+  .projects__page-link {
+    display: flex;
+    justify-content: right;
+    margin-right: 5vw;
+  }
+}
 /*=====  End of Main Selectors  ======*/
 /*=============================================
 =            Navigation                      =
@@ -19,5 +138,70 @@
 }
 
 /*=====  End of Navigation  ======*/
-
-/*# sourceMappingURL=styles.css.map */
+/*=============================================
+=            Main            				  =
+=============================================*/
+/*=====  End of Main  ======*/
+/*=============================================
+=            About            				  =
+=============================================*/
+/*=====  End of About  ======*/
+/*=============================================
+=            Projects            			  =
+=============================================*/
+@media screen and (min-width: 1024px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects {
+    background-color: hsl(291.4, 11.7%, 23.5%);
+    color: hsl(92.7, 6.8%, 68.4%);
+    pointer-events: none;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  .projects i {
+    color: hsl(92.7, 6.8%, 68.4%);
+    transition: 0.5s ease-in-out;
+  }
+  .projects i:hover {
+    color: hsl(266.7, 83.4%, 59.8%);
+  }
+  .projects__project-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .projects__project-item {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    text-align: center;
+    opacity: 75%;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: auto;
+  }
+  .projects__:hover > * {
+    opacity: 0.4;
+  }
+  .projects__:hover > *:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .projects__project-item:hover {
+    opacity: 100%;
+  }
+  .projects__project-item--not-hovered {
+    /* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
+    opacity: 50%;
+  }
+  .projects__page-link {
+    display: flex;
+    justify-content: right;
+    margin-right: 5vw;
+  }
+}
+/*=====  End of Projects  ======*//*# sourceMappingURL=styles.css.map */
