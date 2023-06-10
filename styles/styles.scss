@@ -12,6 +12,10 @@
 /*=============================================
 =            Main Selectors                   =
 =============================================*/
+header {
+	background-color: colours.$black;
+	color: colours.$light-grey;
+}
 
 // * {
 // 	padding: 0;
@@ -181,6 +185,8 @@ section {
 .navbar {
 	display: flex;
 	flex-direction: row;
+	justify-content: right;
+	margin-right: 3vw;
 }
 
 /*=====  End of Navigation  ======*/
