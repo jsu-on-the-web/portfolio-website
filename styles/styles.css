@@ -16,8 +16,15 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  justify-content: right;
 }
 
 /*=====  End of Navigation  ======*/
-
-/*# sourceMappingURL=styles.css.map */
+/*=============================================
+=            Main            				  =
+=============================================*/
+/*=====  End of Main  ======*/
+/*=============================================
+=            About            				  =
+=============================================*/
+/*=====  End of About  ======*//*# sourceMappingURL=styles.css.map */
