@@ -9,6 +9,11 @@
 /*=============================================
 =            Main Selectors                   =
 =============================================*/
+header {
+  background-color: hsl(0, 7.1%, 16.5%);
+  color: hsl(92.7, 6.8%, 68.4%);
+}
+
 /*=====  End of Main Selectors  ======*/
 /*=============================================
 =            Navigation                      =
@@ -17,6 +22,7 @@
   display: flex;
   flex-direction: row;
   justify-content: right;
+  margin-right: 3vw;
 }
 
 /*=====  End of Navigation  ======*/
