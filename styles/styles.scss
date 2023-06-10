@@ -5,6 +5,8 @@
 @use "colours.scss";
 @use "mixins.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat+Alternates:wght@700&family=Share+Tech+Mono&display=swap");
+
 /*=====  End of Imports  ======*/
 
 /*=============================================
@@ -18,6 +20,15 @@
 
 body {
 	margin: 0;
+	font-family: "Cabin", sans-serif;
+}
+
+h1 {
+	font-family: "Montserrat Alternates", sans-serif;
+}
+
+h2 {
+	font-family: "Share Tech Mono", monospace;
 }
 
 section {
