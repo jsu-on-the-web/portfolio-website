@@ -15,6 +15,10 @@
 header {
 	background-color: colours.$black;
 	color: colours.$light-grey;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 }
 
 // * {
@@ -48,11 +52,31 @@ section {
 =            Navigation                      =
 =============================================*/
 
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
 .navbar {
 	display: flex;
 	flex-direction: row;
-	justify-content: right;
+
 	margin-right: 3vw;
+	align-items: center;
+}
+
+.nav-menu {
+	position: relative;
+	left: -24%;
+	opacity: 0;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	@include m.mobile-nav-menu;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	@include m.mobile-nav-menu;
 }
 
 /*=====  End of Navigation  ======*/

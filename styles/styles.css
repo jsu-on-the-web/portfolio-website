@@ -13,6 +13,10 @@
 header {
   background-color: hsl(0, 7.1%, 16.5%);
   color: hsl(92.7, 6.8%, 68.4%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 body {
@@ -39,13 +43,45 @@ section {
 /*=============================================
 =            Navigation                      =
 =============================================*/
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: right;
   margin-right: 3vw;
+  align-items: center;
 }
 
+.nav-menu {
+  position: relative;
+  left: -24%;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .navbar {
+    opacity: 0;
+  }
+  .nav-menu {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    opacity: 0;
+  }
+  .nav-menu {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+  }
+}
 /*=====  End of Navigation  ======*/
 /*=============================================
 =            Main            				  =

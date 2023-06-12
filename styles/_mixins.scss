@@ -7,3 +7,14 @@
 	height: fit-content;
 	padding: 10px;
 }
+
+@mixin mobile-nav-menu {
+	.navbar {
+		opacity: 0;
+	}
+	.nav-menu {
+		opacity: 1;
+		position: absolute;
+		left: 50%;
+	}
+}
