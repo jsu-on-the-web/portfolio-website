@@ -13,6 +13,10 @@
 header {
   background-color: hsl(0, 7.1%, 16.5%);
   color: hsl(92.7, 6.8%, 68.4%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 body {
