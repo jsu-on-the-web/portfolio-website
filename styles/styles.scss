@@ -2,8 +2,8 @@
 =            Imports                          =
 =============================================*/
 
-@use "colours.scss";
-@use "mixins.scss";
+@use "_colours.scss";
+@use "_mixins.scss" as m;
 
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat+Alternates:wght@700&family=Share+Tech+Mono&display=swap");
 
@@ -47,7 +47,7 @@ section {
 	}
 
 	.projects {
-		@include secion-standards;
+		@include m.section-standards;
 
 		i {
 			color: colours.$light-grey;
@@ -111,7 +111,7 @@ section {
 	}
 
 	.projects {
-		@include secion-standards;
+		@include m.section-standards;
 
 		i {
 			color: colours.$light-grey;
@@ -206,7 +206,7 @@ section {
 	}
 
 	.projects {
-		@include secion-standards;
+		@include m.section-standards;
 
 		i {
 			color: colours.$light-grey;
@@ -264,3 +264,9 @@ section {
 }
 
 /*=====  End of Projects  ======*/
+
+/*=============================================
+=            Media Queries            =
+=============================================*/
+
+/*=====  End of Media Queries  ======*/

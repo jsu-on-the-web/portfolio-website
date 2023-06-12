@@ -1,3 +1,5 @@
+@use "_colours.scss";
+
 @mixin section-standards {
 	background-color: colours.$dark-grey;
 	color: colours.$light-grey;

@@ -10,6 +10,10 @@
 /*=============================================
 =            Main Selectors                   =
 =============================================*/
+header {
+  background-color: hsl(0, 7.1%, 16.5%);
+  color: hsl(92.7, 6.8%, 68.4%);
+}
 
 body {
   margin: 0;
@@ -27,11 +31,6 @@ h2 {
 section {
   max-width: 100vw;
   height: 100vh;
-}
-
-header {
-  background-color: hsl(0, 7.1%, 16.5%);
-  color: hsl(92.7, 6.8%, 68.4%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -144,7 +143,6 @@ header {
     margin-right: 5vw;
   }
 }
-
 /*=====  End of Main Selectors  ======*/
 /*=============================================
 =            Navigation                      =
@@ -164,7 +162,6 @@ header {
 /*=============================================
 =            About            				  =
 =============================================*/
-
 /*=====  End of About  ======*/
 /*=============================================
 =            Projects            			  =
@@ -224,4 +221,8 @@ header {
     margin-right: 5vw;
   }
 }
-/*=====  End of Projects  ======*//*# sourceMappingURL=styles.css.map */
+/*=====  End of Projects  ======*/
+/*=============================================
+=            Media Queries            =
+=============================================*/
+/*=====  End of Media Queries  ======*//*# sourceMappingURL=styles.css.map */
