@@ -47,11 +47,7 @@ section {
 	}
 
 	.projects {
-		background-color: colours.$dark-grey;
-		color: colours.$light-grey;
-		pointer-events: none;
-		height: fit-content;
-		padding: 10px;
+		@include secion-standards;
 
 		i {
 			color: colours.$light-grey;
@@ -115,11 +111,7 @@ section {
 	}
 
 	.projects {
-		background-color: colours.$dark-grey;
-		color: colours.$light-grey;
-		pointer-events: none;
-		height: fit-content;
-		padding: 10px;
+		@include secion-standards;
 
 		i {
 			color: colours.$light-grey;
@@ -214,11 +206,7 @@ section {
 	}
 
 	.projects {
-		background-color: colours.$dark-grey;
-		color: colours.$light-grey;
-		pointer-events: none;
-		height: fit-content;
-		padding: 10px;
+		@include secion-standards;
 
 		i {
 			color: colours.$light-grey;
