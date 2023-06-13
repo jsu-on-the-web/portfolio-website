@@ -73,6 +73,13 @@ section {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
+		justify-content: space-around;
+		&__command {
+			font-size: 4rem;
+		}
+		&__message {
+			font-size: 2rem;
+		}
 	}
 }
 

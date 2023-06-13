@@ -60,6 +60,13 @@ section {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-around;
+  }
+  .landing__command {
+    font-size: 4rem;
+  }
+  .landing__message {
+    font-size: 2rem;
   }
 }
 /*=====  End of Landing page  ======*/
