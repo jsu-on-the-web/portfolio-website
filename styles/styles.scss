@@ -64,6 +64,21 @@ section {
 /*=====  End of Main  ======*/
 
 /*=============================================
+=            Landing page            =
+=============================================*/
+
+@media screen and (min-width: 1024px) {
+	.landing {
+		padding: 50px;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+}
+
+/*=====  End of Landing page  ======*/
+
+/*=============================================
 =            About            				  =
 =============================================*/
 
