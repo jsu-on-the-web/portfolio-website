@@ -56,9 +56,9 @@ const landing_message_two = "A Junior Developer!";
 =            Script assignment                =
 =============================================*/
 
-typingEffect("> ./welcome", ".landing__command", 50);
-
-typingEffect(landing_message_one, ".landing__message--first");
+typingEffect("\> ./welcome", ".landing__command", 75);
+setTimeout(typingEffect, 1000, landing_message_one, ".landing__message--first", 75);
+setTimeout(typingEffect, 2570, landing_message_two, ".landing__message--second", 75);
 
 /*=====  End of Script assignment  ======*/
 
