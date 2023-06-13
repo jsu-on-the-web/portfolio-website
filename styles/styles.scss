@@ -95,28 +95,28 @@ section {
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-evenly;
+			pointer-events: none;
 		}
 		&__project-item {
 			display: flex;
 			flex-direction: column;
 			width: 20vw;
 			text-align: center;
-			opacity: 75%;
+			opacity: 100%;
 			transition: opacity 0.5s ease-in-out;
 			pointer-events: auto;
 		}
 
-		&__:hover > * {
+		&__project-list:hover > * {
 			opacity: 0.4;
 		}
 
-		&__:hover > *:hover {
-			transform: scale(1.1);
+		&__project-list:hover > *:hover {
 			opacity: 1;
 		}
 
-		&__project-item:hover {
-			opacity: 100%;
+		&__project-item:not(:hover) {
+			opacity: 50%;
 		}
 
 		&__project-item--not-hovered {

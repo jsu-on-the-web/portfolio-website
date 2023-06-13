@@ -79,25 +79,25 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    pointer-events: none;
   }
   .projects__project-item {
     display: flex;
     flex-direction: column;
     width: 20vw;
     text-align: center;
-    opacity: 75%;
+    opacity: 100%;
     transition: opacity 0.5s ease-in-out;
     pointer-events: auto;
   }
-  .projects__:hover > * {
+  .projects__project-list:hover > * {
     opacity: 0.4;
   }
-  .projects__:hover > *:hover {
-    transform: scale(1.1);
+  .projects__project-list:hover > *:hover {
     opacity: 1;
   }
-  .projects__project-item:hover {
-    opacity: 100%;
+  .projects__project-item:not(:hover) {
+    opacity: 50%;
   }
   .projects__project-item--not-hovered {
     /* Different to something like :not(:hover), this class should be applied WHEN one of the other projects get hovered over*/
