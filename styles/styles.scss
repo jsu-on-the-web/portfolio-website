@@ -67,6 +67,13 @@ section {
 =            Landing page            =
 =============================================*/
 
+// Cursor Icon styles that are mostly identical across screen sizes
+.landing {
+	&__title--cursoricon {
+		display: inline-block;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.landing {
 		padding: 50px;

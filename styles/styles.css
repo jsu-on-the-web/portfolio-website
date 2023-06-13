@@ -54,6 +54,10 @@ section {
 /*=============================================
 =            Landing page            =
 =============================================*/
+.landing__title--cursoricon {
+  display: inline-block;
+}
+
 @media screen and (min-width: 1024px) {
   .landing {
     padding: 50px;
