@@ -19,7 +19,7 @@ async function typingEffect(sentence, element, delay = 100) {
     let i = 0;
     while (i < letters.length) {
         await delayFunction(delay);
-        document.querySelector('.landing__message--first').innerHTML += letters[i];
+        document.querySelector('element').innerHTML += letters[i];
         i++;
     }
     return;
@@ -56,7 +56,9 @@ const landing_message_two = "A Junior Developer!";
 =            Script assignment                =
 =============================================*/
 
+typingEffect("> ./welcome", ".landing__command", 50);
 
+typingEffect(landing_message_one, ".landing__message--first");
 
 /*=====  End of Script assignment  ======*/
 
