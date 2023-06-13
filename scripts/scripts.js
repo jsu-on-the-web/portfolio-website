@@ -19,14 +19,14 @@ async function typingEffect(sentence, element, delay = 100) {
     let i = 0;
     while (i < letters.length) {
         await delayFunction(delay);
-        $(element).append(letters[i]);
+        document.querySelector('.landing__message--first').innerHTML += letters[i];
         i++;
     }
     return;
 }
 
 const delayFunction = function (delay) {
-    return new Promise(resolve, setTimeout(resolve, delay)); // We use the promise to give the browser something to do, and the setTimeout function makes the browser wait for delay milliseconds before resolving the promise
+    return new Promise(resolve => setTimeout(resolve, delay)); // We use the promise to give the browser something to do, and the setTimeout function makes the browser wait for delay milliseconds before resolving the promise
 }
 
 
