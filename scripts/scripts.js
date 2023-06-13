@@ -19,7 +19,7 @@ async function typingEffect(sentence, element, delay = 100) {
     let i = 0;
     while (i < letters.length) {
         await delayFunction(delay);
-        document.querySelector('element').innerHTML += letters[i];
+        document.querySelector(element).innerHTML += letters[i];
         i++;
     }
     return;
