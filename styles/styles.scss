@@ -132,6 +132,13 @@ section {
 	}
 }
 
+/*=====  End of Projects  ======*/
+
+/*=============================================
+=            Media Queries            =
+=============================================*/
+
+/*----------  Projects  ----------*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.projects {
 		@include m.section-standards;
@@ -249,11 +256,5 @@ section {
 		}
 	}
 }
-
-/*=====  End of Projects  ======*/
-
-/*=============================================
-=            Media Queries            =
-=============================================*/
 
 /*=====  End of Media Queries  ======*/
