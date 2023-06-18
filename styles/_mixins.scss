@@ -1,9 +1,19 @@
-@use "_colours.scss";
+@use "_colours.scss" as c;
 
 @mixin section-standards {
-	background-color: colours.$dark-grey;
-	color: colours.$light-grey;
+	background-color: hsl(291.4, 11.7%, 23.5%);
+	color: hsl(92.7, 6.8%, 68.4%);
 	pointer-events: none;
 	height: fit-content;
 	padding: 10px;
+}
+
+@mixin section-title {
+	font-size: 36pt;
+	font-style: italic;
+}
+
+@mixin section-text {
+	font-size: 24pt;
+	padding-left: 4rem;
 }

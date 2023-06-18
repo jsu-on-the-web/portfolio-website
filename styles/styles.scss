@@ -132,6 +132,39 @@ section {
 	}
 }
 
+/*=====  End of Projects  ======*/
+
+/*=============================================
+=            Contact            =
+=============================================*/
+
+@media screen and (min-width: 1024px) {
+	.contact {
+		@include m.section-standards;
+		display: flex;
+		padding: 5rem;
+		flex-direction: column;
+
+		&__command {
+			@include m.section-title;
+		}
+		&__details {
+			@include m.section-text;
+		}
+		&__list {
+			@include m.section-text;
+			display: flex;
+			list-style-type: none;
+		}
+	}
+}
+
+/*=====  End of Contact  ======*/
+
+/*=============================================
+=            Media Queries            =
+=============================================*/
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.projects {
 		@include m.section-standards;
@@ -249,11 +282,4 @@ section {
 		}
 	}
 }
-
-/*=====  End of Projects  ======*/
-
-/*=============================================
-=            Media Queries            =
-=============================================*/
-
 /*=====  End of Media Queries  ======*/

@@ -109,6 +109,41 @@ section {
     margin-right: 5vw;
   }
 }
+/*=====  End of Projects  ======*/
+/*=============================================
+=            Contact            =
+=============================================*/
+@media screen and (min-width: 1024px) {
+  .contact {
+    background-color: hsl(291.4, 11.7%, 23.5%);
+    color: hsl(92.7, 6.8%, 68.4%);
+    pointer-events: none;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+  }
+  .contact__command {
+    font-size: 36pt;
+    font-style: italic;
+  }
+  .contact__details {
+    font-size: 24pt;
+    padding-left: 4rem;
+  }
+  .contact__list {
+    font-size: 24pt;
+    padding-left: 4rem;
+    display: flex;
+    list-style-type: none;
+  }
+}
+/*=====  End of Contact  ======*/
+/*=============================================
+=            Media Queries            =
+=============================================*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .projects {
     background-color: hsl(291.4, 11.7%, 23.5%);
@@ -211,8 +246,4 @@ section {
     margin-right: 5vw;
   }
 }
-/*=====  End of Projects  ======*/
-/*=============================================
-=            Media Queries            =
-=============================================*/
 /*=====  End of Media Queries  ======*//*# sourceMappingURL=styles.css.map */
