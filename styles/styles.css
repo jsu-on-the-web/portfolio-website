@@ -129,6 +129,10 @@ section {
     font-size: 36pt;
     font-style: italic;
   }
+  .contact__command-title {
+    color: hsl(57, 76.7%, 74.7%);
+    animation: alternate 1s ease-in-out pulse;
+  }
   .contact__details {
     font-size: 24pt;
     padding-left: 4rem;
@@ -246,4 +250,16 @@ section {
     margin-right: 5vw;
   }
 }
-/*=====  End of Media Queries  ======*//*# sourceMappingURL=styles.css.map */
+/*=====  End of Media Queries  ======*/
+/*=============================================
+=            Section comment block            =
+=============================================*/
+@keyframes pulse {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 75%;
+  }
+}
+/*=====  End of Section comment block  ======*//*# sourceMappingURL=styles.css.map */

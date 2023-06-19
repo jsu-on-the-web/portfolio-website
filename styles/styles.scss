@@ -148,6 +148,10 @@ section {
 		&__command {
 			@include m.section-title;
 		}
+		&__command-title {
+			color: colours.$yellow;
+			animation: alternate 1s ease-in-out pulse;
+		}
 		&__details {
 			@include m.section-text;
 		}
@@ -283,3 +287,18 @@ section {
 	}
 }
 /*=====  End of Media Queries  ======*/
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
+
+@keyframes pulse {
+	from {
+		opacity: 100%;
+	}
+	to {
+		opacity: 75%;
+	}
+}
+
+/*=====  End of Section comment block  ======*/
